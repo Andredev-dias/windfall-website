@@ -35,7 +35,7 @@ export default function Contact() {
         mensagem += `Assunto: ${assunto} `;
       }
 
-      const numeroTelefone = "554199994084"; // Substitua pelo número de telefone correto
+      const numeroTelefone = "554199999999"; // Substitua pelo número de telefone correto
 
       window.open(
         `https://api.whatsapp.com/send?phone=${numeroTelefone}&text=${encodeURIComponent(

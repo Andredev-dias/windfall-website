@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ex from "@/assets/images/apple-logo.webp";
 import styles from "@/styles/components/general.module.css";
+import Link from "next/link";
 
 function GeneralSection() {
   return (
@@ -13,7 +14,9 @@ function GeneralSection() {
             instigante, te ajudando a pensar em inglês e tornando seu
             aprendizado muito mais fácil
           </p>
-          <button className={styles["btn"]}>Saiba mais</button>
+          <Link href="/about">
+            <button className={styles["btn"]}>Saiba mais</button>
+          </Link>
         </div>
         <div>
           <Image src={ex} alt="imagem" className={styles["imgGeneral"]} />

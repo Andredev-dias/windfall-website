@@ -1,4 +1,5 @@
 import styles from "@/styles/components/thirdSection.module.css";
+import Link from "next/link";
 
 function ThirdSection() {
   return (
@@ -7,7 +8,9 @@ function ThirdSection() {
         <strong className={styles["strong"]}>WindFall, </strong>
         sua escolha na hora de aprender idiomas!
       </h1>
-      <button className={styles["btn"]}>Assine ja</button>
+      <Link href="/contact">
+        <button className={styles["btn"]}>Assine ja</button>
+      </Link>
     </section>
   );
 }
